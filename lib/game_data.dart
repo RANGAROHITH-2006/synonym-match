@@ -1176,6 +1176,766 @@ class GameData {
         GameQuestion(equation: "Thrive", correctAnswer: "Succeed", options: ["Fail", "Succeed", "Struggle", "Decline"]),
       ],
     ),
+
+    // Level 61 - Synonyms
+    GameLevel(
+      level: 61,
+      questions: [
+        GameQuestion(equation: "Ancient", correctAnswer: "Old", options: ["New", "Old", "Modern", "Recent"]),
+        GameQuestion(equation: "Assist", correctAnswer: "Help", options: ["Hinder", "Help", "Block", "Prevent"]),
+        GameQuestion(equation: "Brief", correctAnswer: "Short", options: ["Long", "Short", "Extended", "Lengthy"]),
+        GameQuestion(equation: "Capture", correctAnswer: "Seize", options: ["Release", "Seize", "Free", "Liberate"]),
+        GameQuestion(equation: "Cautious", correctAnswer: "Careful", options: ["Reckless", "Careful", "Careless", "Hasty"]),
+        GameQuestion(equation: "Declare", correctAnswer: "Announce", options: ["Hide", "Announce", "Conceal", "Suppress"]),
+        GameQuestion(equation: "Entire", correctAnswer: "Whole", options: ["Partial", "Whole", "Incomplete", "Fragment"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Grasp", correctAnswer: "Understand", options: ["Confuse", "Understand", "Misunderstand", "Puzzle"]),
+        GameQuestion(equation: "Idle", correctAnswer: "Inactive", options: ["Active", "Inactive", "Busy", "Working"]),
+        GameQuestion(equation: "Predict", correctAnswer: "Forecast", options: ["Recall", "Forecast", "Remember", "Forget"]),
+      ],
+    ),
+
+    // Level 62 - Synonyms
+    GameLevel(
+      level: 62,
+      questions: [
+        GameQuestion(equation: "Scarce", correctAnswer: "Rare", options: ["Common", "Rare", "Abundant", "Plentiful"]),
+        GameQuestion(equation: "Reply", correctAnswer: "Answer", options: ["Question", "Answer", "Ask", "Inquire"]),
+        GameQuestion(equation: "Secret", correctAnswer: "Hidden", options: ["Obvious", "Hidden", "Visible", "Clear"]),
+        GameQuestion(equation: "Swift", correctAnswer: "Quick", options: ["Slow", "Quick", "Sluggish", "Lazy"]),
+        GameQuestion(equation: "Trust", correctAnswer: "Believe", options: ["Doubt", "Believe", "Distrust", "Question"]),
+        GameQuestion(equation: "Vacant", correctAnswer: "Empty", options: ["Full", "Empty", "Occupied", "Filled"]),
+        GameQuestion(equation: "Wander", correctAnswer: "Roam", options: ["Stay", "Roam", "Settle", "Remain"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Worthy", correctAnswer: "Deserving", options: ["Unworthy", "Deserving", "Undeserving", "Worthless"]),
+        GameQuestion(equation: "Yield", correctAnswer: "Produce", options: ["Consume", "Produce", "Use", "Take"]),
+        GameQuestion(equation: "Zone", correctAnswer: "Area", options: ["Point", "Area", "Spot", "Place"]),
+      ],
+    ),
+
+    // Level 63 - Synonyms
+    GameLevel(
+      level: 63,
+      questions: [
+        GameQuestion(equation: "Confess", correctAnswer: "Admit", options: ["Deny", "Admit", "Hide", "Conceal"]),
+        GameQuestion(equation: "Defend", correctAnswer: "Protect", options: ["Attack", "Protect", "Harm", "Threaten"]),
+        GameQuestion(equation: "Enormous", correctAnswer: "Huge", options: ["Tiny", "Huge", "Small", "Little"]),
+        GameQuestion(equation: "Faith", correctAnswer: "Trust", options: ["Doubt", "Trust", "Disbelief", "Skepticism"]),
+        GameQuestion(equation: "Grief", correctAnswer: "Sorrow", options: ["Joy", "Sorrow", "Happiness", "Delight"]),
+        GameQuestion(equation: "Loyal", correctAnswer: "Faithful", options: ["Disloyal", "Faithful", "Traitorous", "Unfaithful"]),
+        GameQuestion(equation: "Noble", correctAnswer: "Honorable", options: ["Shameful", "Honorable", "Disgraceful", "Dishonest"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Obtain", correctAnswer: "Get", options: ["Lose", "Get", "Give", "Surrender"]),
+        GameQuestion(equation: "Reject", correctAnswer: "Refuse", options: ["Accept", "Refuse", "Approve", "Welcome"]),
+        GameQuestion(equation: "Visible", correctAnswer: "Seen", options: ["Hidden", "Seen", "Invisible", "Concealed"]),
+      ],
+    ),
+
+    // Level 64 - Synonyms
+    GameLevel(
+      level: 64,
+      questions: [
+        GameQuestion(equation: "Alert", correctAnswer: "Watchful", options: ["Careless", "Watchful", "Negligent", "Unaware"]),
+        GameQuestion(equation: "Bold", correctAnswer: "Brave", options: ["Timid", "Brave", "Fearful", "Cowardly"]),
+        GameQuestion(equation: "Clarity", correctAnswer: "Clearness", options: ["Confusion", "Clearness", "Ambiguity", "Obscurity"]),
+        GameQuestion(equation: "Collapse", correctAnswer: "Fall", options: ["Rise", "Fall", "Stand", "Build"]),
+        GameQuestion(equation: "Desire", correctAnswer: "Want", options: ["Reject", "Want", "Refuse", "Dislike"]),
+        GameQuestion(equation: "Evaluate", correctAnswer: "Assess", options: ["Ignore", "Assess", "Overlook", "Neglect"]),
+        GameQuestion(equation: "Harmony", correctAnswer: "Peace", options: ["Discord", "Peace", "Conflict", "Chaos"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Persuade", correctAnswer: "Convince", options: ["Discourage", "Convince", "Deter", "Dissuade"]),
+        GameQuestion(equation: "Reveal", correctAnswer: "Show", options: ["Hide", "Show", "Conceal", "Cover"]),
+        GameQuestion(equation: "Silent", correctAnswer: "Quiet", options: ["Loud", "Quiet", "Noisy", "Boisterous"]),
+      ],
+    ),
+
+    // Level 65 - Synonyms
+    GameLevel(
+      level: 65,
+      questions: [
+        GameQuestion(equation: "Assist", correctAnswer: "Aid", options: ["Hinder", "Aid", "Block", "Obstruct"]),
+        GameQuestion(equation: "Brave", correctAnswer: "Courageous", options: ["Cowardly", "Courageous", "Fearful", "Timid"]),
+        GameQuestion(equation: "Brief", correctAnswer: "Short", options: ["Long", "Short", "Extended", "Lengthy"]),
+        GameQuestion(equation: "Distant", correctAnswer: "Far", options: ["Near", "Far", "Close", "Nearby"]),
+        GameQuestion(equation: "Error", correctAnswer: "Mistake", options: ["Correct", "Mistake", "Right", "Accurate"]),
+        GameQuestion(equation: "Harsh", correctAnswer: "Rough", options: ["Gentle", "Rough", "Soft", "Smooth"]),
+        GameQuestion(equation: "Keen", correctAnswer: "Sharp", options: ["Dull", "Sharp", "Blunt", "Blurred"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Prosper", correctAnswer: "Succeed", options: ["Fail", "Succeed", "Struggle", "Decline"]),
+        GameQuestion(equation: "Renew", correctAnswer: "Restore", options: ["Destroy", "Restore", "Ruin", "Damage"]),
+        GameQuestion(equation: "Vacant", correctAnswer: "Empty", options: ["Full", "Empty", "Occupied", "Filled"]),
+      ],
+    ),
+
+    // Level 66 - Synonyms
+    GameLevel(
+      level: 66,
+      questions: [
+        GameQuestion(equation: "Alert", correctAnswer: "Attentive", options: ["Distracted", "Attentive", "Careless", "Negligent"]),
+        GameQuestion(equation: "Astonish", correctAnswer: "Surprise", options: ["Bore", "Surprise", "Expect", "Anticipate"]),
+        GameQuestion(equation: "Commute", correctAnswer: "Travel", options: ["Stay", "Travel", "Remain", "Settle"]),
+        GameQuestion(equation: "Dusk", correctAnswer: "Evening", options: ["Morning", "Evening", "Dawn", "Noon"]),
+        GameQuestion(equation: "Eternal", correctAnswer: "Forever", options: ["Temporary", "Forever", "Brief", "Short"]),
+        GameQuestion(equation: "Faint", correctAnswer: "Weak", options: ["Strong", "Weak", "Powerful", "Intense"]),
+        GameQuestion(equation: "Grant", correctAnswer: "Allow", options: ["Deny", "Allow", "Refuse", "Prohibit"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Keen", correctAnswer: "Eager", options: ["Reluctant", "Eager", "Unwilling", "Hesitant"]),
+        GameQuestion(equation: "Realm", correctAnswer: "Kingdom", options: ["Village", "Kingdom", "Town", "City"]),
+        GameQuestion(equation: "Sincere", correctAnswer: "Honest", options: ["Dishonest", "Honest", "Fake", "False"]),
+      ],
+    ),
+
+    // Level 67 - Synonyms
+    GameLevel(
+      level: 67,
+      questions: [
+        GameQuestion(equation: "Acquire", correctAnswer: "Gain", options: ["Lose", "Gain", "Give", "Surrender"]),
+        GameQuestion(equation: "Bliss", correctAnswer: "Joy", options: ["Sorrow", "Joy", "Sadness", "Grief"]),
+        GameQuestion(equation: "Cease", correctAnswer: "Stop", options: ["Continue", "Stop", "Start", "Begin"]),
+        GameQuestion(equation: "Devour", correctAnswer: "Eat", options: ["Starve", "Eat", "Fast", "Abstain"]),
+        GameQuestion(equation: "Illuminate", correctAnswer: "Light", options: ["Darken", "Light", "Dim", "Shadow"]),
+        GameQuestion(equation: "Maintain", correctAnswer: "Keep", options: ["Abandon", "Keep", "Discard", "Lose"]),
+        GameQuestion(equation: "Motion", correctAnswer: "Movement", options: ["Stillness", "Movement", "Rest", "Stop"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Permit", correctAnswer: "Allow", options: ["Forbid", "Allow", "Ban", "Prohibit"]),
+        GameQuestion(equation: "Reside", correctAnswer: "Live", options: ["Leave", "Live", "Depart", "Go"]),
+        GameQuestion(equation: "Thrive", correctAnswer: "Grow", options: ["Decline", "Grow", "Wither", "Shrink"]),
+      ],
+    ),
+
+    // Level 68 - Synonyms
+    GameLevel(
+      level: 68,
+      questions: [
+        GameQuestion(equation: "Anguish", correctAnswer: "Pain", options: ["Pleasure", "Pain", "Joy", "Comfort"]),
+        GameQuestion(equation: "Cease", correctAnswer: "End", options: ["Start", "End", "Begin", "Continue"]),
+        GameQuestion(equation: "Diligent", correctAnswer: "Hardworking", options: ["Lazy", "Hardworking", "Idle", "Careless"]),
+        GameQuestion(equation: "Grumble", correctAnswer: "Complain", options: ["Praise", "Complain", "Appreciate", "Thank"]),
+        GameQuestion(equation: "Impose", correctAnswer: "Force", options: ["Request", "Force", "Ask", "Suggest"]),
+        GameQuestion(equation: "Massive", correctAnswer: "Huge", options: ["Tiny", "Huge", "Small", "Little"]),
+        GameQuestion(equation: "Peril", correctAnswer: "Danger", options: ["Safety", "Danger", "Security", "Protection"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Radiant", correctAnswer: "Bright", options: ["Dull", "Bright", "Dark", "Dim"]),
+        GameQuestion(equation: "Soothe", correctAnswer: "Calm", options: ["Agitate", "Calm", "Disturb", "Upset"]),
+        GameQuestion(equation: "Triumph", correctAnswer: "Victory", options: ["Defeat", "Victory", "Loss", "Failure"]),
+      ],
+    ),
+
+    // Level 69 - Synonyms
+    GameLevel(
+      level: 69,
+      questions: [
+        GameQuestion(equation: "Abundant", correctAnswer: "Plentiful", options: ["Scarce", "Plentiful", "Rare", "Limited"]),
+        GameQuestion(equation: "Boost", correctAnswer: "Increase", options: ["Decrease", "Increase", "Reduce", "Lower"]),
+        GameQuestion(equation: "Defeat", correctAnswer: "Beat", options: ["Win", "Beat", "Victory", "Triumph"]),
+        GameQuestion(equation: "Essence", correctAnswer: "Core", options: ["Surface", "Core", "Edge", "Outside"]),
+        GameQuestion(equation: "Flee", correctAnswer: "Escape", options: ["Stay", "Escape", "Remain", "Confront"]),
+        GameQuestion(equation: "Hesitate", correctAnswer: "Pause", options: ["Continue", "Pause", "Proceed", "Advance"]),
+        GameQuestion(equation: "Imitate", correctAnswer: "Copy", options: ["Create", "Copy", "Invent", "Originate"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Merge", correctAnswer: "Combine", options: ["Separate", "Combine", "Divide", "Split"]),
+        GameQuestion(equation: "Scatter", correctAnswer: "Spread", options: ["Gather", "Spread", "Collect", "Assemble"]),
+        GameQuestion(equation: "Vague", correctAnswer: "Unclear", options: ["Clear", "Unclear", "Obvious", "Precise"]),
+      ],
+    ),
+
+    // Level 70 - Synonyms
+    GameLevel(
+      level: 70,
+      questions: [
+        GameQuestion(equation: "Absorb", correctAnswer: "Soak", options: ["Repel", "Soak", "Reject", "Expel"]),
+        GameQuestion(equation: "Agile", correctAnswer: "Quick", options: ["Slow", "Quick", "Clumsy", "Heavy"]),
+        GameQuestion(equation: "Barrier", correctAnswer: "Obstacle", options: ["Opening", "Obstacle", "Path", "Way"]),
+        GameQuestion(equation: "Cherish", correctAnswer: "Treasure", options: ["Discard", "Treasure", "Abandon", "Neglect"]),
+        GameQuestion(equation: "Delicate", correctAnswer: "Fragile", options: ["Strong", "Fragile", "Tough", "Sturdy"]),
+        GameQuestion(equation: "Expand", correctAnswer: "Enlarge", options: ["Shrink", "Enlarge", "Reduce", "Contract"]),
+        GameQuestion(equation: "Furious", correctAnswer: "Angry", options: ["Calm", "Angry", "Peaceful", "Happy"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Humiliate", correctAnswer: "Shame", options: ["Honor", "Shame", "Praise", "Respect"]),
+        GameQuestion(equation: "Meager", correctAnswer: "Small", options: ["Large", "Small", "Big", "Huge"]),
+        GameQuestion(equation: "Reluctant", correctAnswer: "Unwilling", options: ["Eager", "Unwilling", "Willing", "Ready"]),
+      ],
+    ),
+
+    // Level 71 - Synonyms
+    GameLevel(
+      level: 71,
+      questions: [
+        GameQuestion(equation: "Adapt", correctAnswer: "Adjust", options: ["Resist", "Adjust", "Refuse", "Oppose"]),
+        GameQuestion(equation: "Cunning", correctAnswer: "Clever", options: ["Foolish", "Clever", "Stupid", "Dumb"]),
+        GameQuestion(equation: "Endless", correctAnswer: "Infinite", options: ["Limited", "Infinite", "Finite", "Short"]),
+        GameQuestion(equation: "Furious", correctAnswer: "Enraged", options: ["Calm", "Enraged", "Peaceful", "Serene"]),
+        GameQuestion(equation: "Idle", correctAnswer: "Lazy", options: ["Active", "Lazy", "Busy", "Working"]),
+        GameQuestion(equation: "Modify", correctAnswer: "Change", options: ["Keep", "Change", "Maintain", "Preserve"]),
+        GameQuestion(equation: "Predict", correctAnswer: "Foresee", options: ["Recall", "Foresee", "Remember", "Forget"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Reliable", correctAnswer: "Trustworthy", options: ["Unreliable", "Trustworthy", "Doubtful", "Questionable"]),
+        GameQuestion(equation: "Scatter", correctAnswer: "Disperse", options: ["Gather", "Disperse", "Collect", "Assemble"]),
+        GameQuestion(equation: "Vast", correctAnswer: "Huge", options: ["Tiny", "Huge", "Small", "Little"]),
+      ],
+    ),
+
+    // Level 72 - Synonyms
+    GameLevel(
+      level: 72,
+      questions: [
+        GameQuestion(equation: "Alert", correctAnswer: "Aware", options: ["Unaware", "Aware", "Oblivious", "Ignorant"]),
+        GameQuestion(equation: "Conquer", correctAnswer: "Defeat", options: ["Lose", "Defeat", "Surrender", "Fail"]),
+        GameQuestion(equation: "Deliberate", correctAnswer: "Intentional", options: ["Accidental", "Intentional", "Unintentional", "Random"]),
+        GameQuestion(equation: "Ease", correctAnswer: "Comfort", options: ["Difficulty", "Comfort", "Hardship", "Struggle"]),
+        GameQuestion(equation: "Fierce", correctAnswer: "Violent", options: ["Gentle", "Violent", "Mild", "Calm"]),
+        GameQuestion(equation: "Genuine", correctAnswer: "Real", options: ["Fake", "Real", "False", "Artificial"]),
+        GameQuestion(equation: "Hostile", correctAnswer: "Unfriendly", options: ["Friendly", "Unfriendly", "Kind", "Welcoming"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Mourn", correctAnswer: "Grieve", options: ["Celebrate", "Grieve", "Rejoice", "Cheer"]),
+        GameQuestion(equation: "Ponder", correctAnswer: "Think", options: ["Ignore", "Think", "Dismiss", "Forget"]),
+        GameQuestion(equation: "Vacant", correctAnswer: "Empty", options: ["Full", "Empty", "Occupied", "Filled"]),
+      ],
+    ),
+
+    // Level 73 - Synonyms
+    GameLevel(
+      level: 73,
+      questions: [
+        GameQuestion(equation: "Assist", correctAnswer: "Help", options: ["Hinder", "Help", "Block", "Prevent"]),
+        GameQuestion(equation: "Consider", correctAnswer: "Think", options: ["Ignore", "Think", "Dismiss", "Overlook"]),
+        GameQuestion(equation: "Defy", correctAnswer: "Resist", options: ["Obey", "Resist", "Submit", "Comply"]),
+        GameQuestion(equation: "Envy", correctAnswer: "Jealousy", options: ["Contentment", "Jealousy", "Satisfaction", "Happiness"]),
+        GameQuestion(equation: "Flexible", correctAnswer: "Bendable", options: ["Rigid", "Bendable", "Stiff", "Inflexible"]),
+        GameQuestion(equation: "Icy", correctAnswer: "Cold", options: ["Hot", "Cold", "Warm", "Heated"]),
+        GameQuestion(equation: "Observe", correctAnswer: "Watch", options: ["Ignore", "Watch", "Overlook", "Miss"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Rage", correctAnswer: "Anger", options: ["Calm", "Anger", "Peace", "Serenity"]),
+        GameQuestion(equation: "Unite", correctAnswer: "Join", options: ["Separate", "Join", "Divide", "Split"]),
+        GameQuestion(equation: "Warn", correctAnswer: "Alert", options: ["Ignore", "Alert", "Neglect", "Overlook"]),
+      ],
+    ),
+
+    // Level 74 - Synonyms
+    GameLevel(
+      level: 74,
+      questions: [
+        GameQuestion(equation: "Ancient", correctAnswer: "Old", options: ["Modern", "Old", "New", "Recent"]),
+        GameQuestion(equation: "Bloom", correctAnswer: "Blossom", options: ["Wither", "Blossom", "Decay", "Die"]),
+        GameQuestion(equation: "Contrast", correctAnswer: "Difference", options: ["Similarity", "Difference", "Likeness", "Match"]),
+        GameQuestion(equation: "Dusk", correctAnswer: "Sunset", options: ["Dawn", "Sunset", "Sunrise", "Morning"]),
+        GameQuestion(equation: "Expand", correctAnswer: "Grow", options: ["Shrink", "Grow", "Contract", "Reduce"]),
+        GameQuestion(equation: "Fierce", correctAnswer: "Strong", options: ["Weak", "Strong", "Gentle", "Mild"]),
+        GameQuestion(equation: "Grace", correctAnswer: "Elegance", options: ["Clumsiness", "Elegance", "Awkwardness", "Inelegance"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Noble", correctAnswer: "Royal", options: ["Common", "Royal", "Ordinary", "Lowly"]),
+        GameQuestion(equation: "Perish", correctAnswer: "Die", options: ["Live", "Die", "Survive", "Thrive"]),
+        GameQuestion(equation: "Remote", correctAnswer: "Far", options: ["Near", "Far", "Close", "Nearby"]),
+      ],
+    ),
+
+    // Level 75 - Synonyms
+    GameLevel(
+      level: 75,
+      questions: [
+        GameQuestion(equation: "Bitter", correctAnswer: "Harsh", options: ["Sweet", "Harsh", "Pleasant", "Mild"]),
+        GameQuestion(equation: "Compassion", correctAnswer: "Kindness", options: ["Cruelty", "Kindness", "Meanness", "Harshness"]),
+        GameQuestion(equation: "Delighted", correctAnswer: "Happy", options: ["Sad", "Happy", "Miserable", "Depressed"]),
+        GameQuestion(equation: "Eternal", correctAnswer: "Endless", options: ["Temporary", "Endless", "Brief", "Short"]),
+        GameQuestion(equation: "Frigid", correctAnswer: "Freezing", options: ["Hot", "Freezing", "Warm", "Boiling"]),
+        GameQuestion(equation: "Hazard", correctAnswer: "Danger", options: ["Safety", "Danger", "Security", "Protection"]),
+        GameQuestion(equation: "Marvel", correctAnswer: "Wonder", options: ["Bore", "Wonder", "Dullness", "Monotony"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Perplexed", correctAnswer: "Confused", options: ["Clear", "Confused", "Understanding", "Certain"]),
+        GameQuestion(equation: "Severe", correctAnswer: "Harsh", options: ["Gentle", "Harsh", "Mild", "Soft"]),
+        GameQuestion(equation: "Triumph", correctAnswer: "Win", options: ["Lose", "Win", "Fail", "Defeat"]),
+      ],
+    ),
+
+    // Level 76 - Synonyms
+    GameLevel(
+      level: 76,
+      questions: [
+        GameQuestion(equation: "Abandon", correctAnswer: "Leave", options: ["Stay", "Leave", "Remain", "Keep"]),
+        GameQuestion(equation: "Brisk", correctAnswer: "Quick", options: ["Slow", "Quick", "Sluggish", "Lazy"]),
+        GameQuestion(equation: "Declare", correctAnswer: "Announce", options: ["Hide", "Announce", "Conceal", "Suppress"]),
+        GameQuestion(equation: "Endeavor", correctAnswer: "Try", options: ["Quit", "Try", "Surrender", "Abandon"]),
+        GameQuestion(equation: "Gloom", correctAnswer: "Darkness", options: ["Light", "Darkness", "Brightness", "Radiance"]),
+        GameQuestion(equation: "Kindle", correctAnswer: "Ignite", options: ["Extinguish", "Ignite", "Quench", "Douse"]),
+        GameQuestion(equation: "Mimic", correctAnswer: "Copy", options: ["Create", "Copy", "Invent", "Originate"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Prosper", correctAnswer: "Flourish", options: ["Decline", "Flourish", "Fail", "Wither"]),
+        GameQuestion(equation: "Robust", correctAnswer: "Strong", options: ["Weak", "Strong", "Fragile", "Feeble"]),
+        GameQuestion(equation: "Weary", correctAnswer: "Tired", options: ["Energetic", "Tired", "Fresh", "Lively"]),
+      ],
+    ),
+
+    // Level 77 - Synonyms
+    GameLevel(
+      level: 77,
+      questions: [
+        GameQuestion(equation: "Awkward", correctAnswer: "Clumsy", options: ["Graceful", "Clumsy", "Elegant", "Coordinated"]),
+        GameQuestion(equation: "Blunt", correctAnswer: "Dull", options: ["Sharp", "Dull", "Pointed", "Keen"]),
+        GameQuestion(equation: "Dread", correctAnswer: "Fear", options: ["Courage", "Fear", "Bravery", "Confidence"]),
+        GameQuestion(equation: "Emerge", correctAnswer: "Appear", options: ["Disappear", "Appear", "Vanish", "Hide"]),
+        GameQuestion(equation: "Feeble", correctAnswer: "Weak", options: ["Strong", "Weak", "Powerful", "Robust"]),
+        GameQuestion(equation: "Greedy", correctAnswer: "Selfish", options: ["Generous", "Selfish", "Giving", "Charitable"]),
+        GameQuestion(equation: "Mentor", correctAnswer: "Guide", options: ["Student", "Guide", "Learner", "Follower"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Plunge", correctAnswer: "Drop", options: ["Rise", "Drop", "Ascend", "Climb"]),
+        GameQuestion(equation: "Rival", correctAnswer: "Competitor", options: ["Ally", "Competitor", "Partner", "Friend"]),
+        GameQuestion(equation: "Swift", correctAnswer: "Fast", options: ["Slow", "Fast", "Sluggish", "Leisurely"]),
+      ],
+    ),
+
+    // Level 78 - Synonyms
+    GameLevel(
+      level: 78,
+      questions: [
+        GameQuestion(equation: "Adore", correctAnswer: "Love", options: ["Hate", "Love", "Despise", "Detest"]),
+        GameQuestion(equation: "Breakthrough", correctAnswer: "Discovery", options: ["Failure", "Discovery", "Setback", "Loss"]),
+        GameQuestion(equation: "Cease", correctAnswer: "Stop", options: ["Continue", "Stop", "Start", "Begin"]),
+        GameQuestion(equation: "Dilemma", correctAnswer: "Problem", options: ["Solution", "Problem", "Answer", "Resolution"]),
+        GameQuestion(equation: "Flourish", correctAnswer: "Grow", options: ["Decline", "Grow", "Wither", "Shrink"]),
+        GameQuestion(equation: "Guardian", correctAnswer: "Protector", options: ["Threat", "Protector", "Enemy", "Attacker"]),
+        GameQuestion(equation: "Leisure", correctAnswer: "Free time", options: ["Work", "Free time", "Labor", "Duty"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Mysterious", correctAnswer: "Unknown", options: ["Known", "Unknown", "Clear", "Obvious"]),
+        GameQuestion(equation: "Radiant", correctAnswer: "Glowing", options: ["Dull", "Glowing", "Dark", "Dim"]),
+        GameQuestion(equation: "Summon", correctAnswer: "Call", options: ["Dismiss", "Call", "Send away", "Reject"]),
+      ],
+    ),
+
+    // Level 79 - Synonyms
+    GameLevel(
+      level: 79,
+      questions: [
+        GameQuestion(equation: "Boundary", correctAnswer: "Limit", options: ["Freedom", "Limit", "Opening", "Expanse"]),
+        GameQuestion(equation: "Custom", correctAnswer: "Tradition", options: ["Innovation", "Tradition", "Change", "Novelty"]),
+        GameQuestion(equation: "Devote", correctAnswer: "Dedicate", options: ["Neglect", "Dedicate", "Ignore", "Abandon"]),
+        GameQuestion(equation: "Enforce", correctAnswer: "Apply", options: ["Ignore", "Apply", "Disregard", "Overlook"]),
+        GameQuestion(equation: "Fragile", correctAnswer: "Delicate", options: ["Strong", "Delicate", "Tough", "Sturdy"]),
+        GameQuestion(equation: "Hostile", correctAnswer: "Aggressive", options: ["Friendly", "Aggressive", "Peaceful", "Kind"]),
+        GameQuestion(equation: "Legend", correctAnswer: "Myth", options: ["Fact", "Myth", "Truth", "Reality"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Persist", correctAnswer: "Continue", options: ["Quit", "Continue", "Stop", "Surrender"]),
+        GameQuestion(equation: "Scar", correctAnswer: "Mark", options: ["Heal", "Mark", "Cure", "Restore"]),
+        GameQuestion(equation: "Unity", correctAnswer: "Togetherness", options: ["Division", "Togetherness", "Separation", "Discord"]),
+      ],
+    ),
+
+    // Level 80 - Synonyms
+    GameLevel(
+      level: 80,
+      questions: [
+        GameQuestion(equation: "Ambition", correctAnswer: "Goal", options: ["Apathy", "Goal", "Indifference", "Laziness"]),
+        GameQuestion(equation: "Blaze", correctAnswer: "Fire", options: ["Water", "Fire", "Ice", "Cold"]),
+        GameQuestion(equation: "Caution", correctAnswer: "Care", options: ["Recklessness", "Care", "Carelessness", "Negligence"]),
+        GameQuestion(equation: "Decline", correctAnswer: "Decrease", options: ["Increase", "Decrease", "Rise", "Grow"]),
+        GameQuestion(equation: "Endure", correctAnswer: "Survive", options: ["Quit", "Survive", "Surrender", "Perish"]),
+        GameQuestion(equation: "Frontier", correctAnswer: "Border", options: ["Center", "Border", "Core", "Middle"]),
+        GameQuestion(equation: "Glimpse", correctAnswer: "Peek", options: ["Stare", "Peek", "Gaze", "Glare"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Optimistic", correctAnswer: "Hopeful", options: ["Pessimistic", "Hopeful", "Negative", "Gloomy"]),
+        GameQuestion(equation: "Perceive", correctAnswer: "Notice", options: ["Ignore", "Notice", "Miss", "Overlook"]),
+        GameQuestion(equation: "Thrive", correctAnswer: "Grow", options: ["Decline", "Grow", "Wither", "Fail"]),
+      ],
+    ),
+
+    // Level 81 - Synonyms
+    GameLevel(
+      level: 81,
+      questions: [
+        GameQuestion(equation: "Adapt", correctAnswer: "Adjust", options: ["Resist", "Adjust", "Refuse", "Oppose"]),
+        GameQuestion(equation: "Banish", correctAnswer: "Expel", options: ["Welcome", "Expel", "Invite", "Accept"]),
+        GameQuestion(equation: "Clever", correctAnswer: "Smart", options: ["Stupid", "Smart", "Dumb", "Foolish"]),
+        GameQuestion(equation: "Distant", correctAnswer: "Far", options: ["Near", "Far", "Close", "Nearby"]),
+        GameQuestion(equation: "Eternal", correctAnswer: "Forever", options: ["Temporary", "Forever", "Brief", "Short"]),
+        GameQuestion(equation: "Harsh", correctAnswer: "Rough", options: ["Gentle", "Rough", "Soft", "Smooth"]),
+        GameQuestion(equation: "Isolate", correctAnswer: "Separate", options: ["Unite", "Separate", "Connect", "Join"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Modest", correctAnswer: "Humble", options: ["Arrogant", "Humble", "Proud", "Boastful"]),
+        GameQuestion(equation: "Sacred", correctAnswer: "Holy", options: ["Profane", "Holy", "Unholy", "Secular"]),
+        GameQuestion(equation: "Vast", correctAnswer: "Huge", options: ["Tiny", "Huge", "Small", "Little"]),
+      ],
+    ),
+
+    // Level 82 - Synonyms
+    GameLevel(
+      level: 82,
+      questions: [
+        GameQuestion(equation: "Alert", correctAnswer: "Watchful", options: ["Careless", "Watchful", "Negligent", "Unaware"]),
+        GameQuestion(equation: "Bravery", correctAnswer: "Courage", options: ["Cowardice", "Courage", "Fear", "Timidity"]),
+        GameQuestion(equation: "Confess", correctAnswer: "Admit", options: ["Deny", "Admit", "Hide", "Conceal"]),
+        GameQuestion(equation: "Discover", correctAnswer: "Find", options: ["Lose", "Find", "Hide", "Conceal"]),
+        GameQuestion(equation: "Era", correctAnswer: "Age", options: ["Moment", "Age", "Second", "Instant"]),
+        GameQuestion(equation: "Fierce", correctAnswer: "Violent", options: ["Gentle", "Violent", "Mild", "Calm"]),
+        GameQuestion(equation: "Grasp", correctAnswer: "Understand", options: ["Confuse", "Understand", "Misunderstand", "Puzzle"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Humble", correctAnswer: "Modest", options: ["Proud", "Modest", "Arrogant", "Boastful"]),
+        GameQuestion(equation: "Peril", correctAnswer: "Danger", options: ["Safety", "Danger", "Security", "Protection"]),
+        GameQuestion(equation: "Vanish", correctAnswer: "Disappear", options: ["Appear", "Disappear", "Emerge", "Show"]),
+      ],
+    ),
+
+    // Level 83 - Synonyms
+    GameLevel(
+      level: 83,
+      questions: [
+        GameQuestion(equation: "Appeal", correctAnswer: "Request", options: ["Demand", "Request", "Order", "Command"]),
+        GameQuestion(equation: "Bold", correctAnswer: "Fearless", options: ["Timid", "Fearless", "Afraid", "Cowardly"]),
+        GameQuestion(equation: "Craft", correctAnswer: "Skill", options: ["Clumsiness", "Skill", "Inability", "Incompetence"]),
+        GameQuestion(equation: "Dense", correctAnswer: "Thick", options: ["Thin", "Thick", "Sparse", "Light"]),
+        GameQuestion(equation: "Eager", correctAnswer: "Excited", options: ["Bored", "Excited", "Indifferent", "Apathetic"]),
+        GameQuestion(equation: "Gentle", correctAnswer: "Soft", options: ["Harsh", "Soft", "Rough", "Hard"]),
+        GameQuestion(equation: "Hinder", correctAnswer: "Obstruct", options: ["Help", "Obstruct", "Aid", "Assist"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Marvel", correctAnswer: "Wonder", options: ["Bore", "Wonder", "Dullness", "Monotony"]),
+        GameQuestion(equation: "Recall", correctAnswer: "Remember", options: ["Forget", "Remember", "Ignore", "Overlook"]),
+        GameQuestion(equation: "Sincere", correctAnswer: "Honest", options: ["Dishonest", "Honest", "Fake", "False"]),
+      ],
+    ),
+
+    // Level 84 - Synonyms
+    GameLevel(
+      level: 84,
+      questions: [
+        GameQuestion(equation: "Accuse", correctAnswer: "Blame", options: ["Praise", "Blame", "Commend", "Compliment"]),
+        GameQuestion(equation: "Barrier", correctAnswer: "Obstacle", options: ["Opening", "Obstacle", "Path", "Way"]),
+        GameQuestion(equation: "Chaos", correctAnswer: "Disorder", options: ["Order", "Disorder", "Peace", "Harmony"]),
+        GameQuestion(equation: "Dwell", correctAnswer: "Live", options: ["Leave", "Live", "Depart", "Go"]),
+        GameQuestion(equation: "Expand", correctAnswer: "Increase", options: ["Decrease", "Increase", "Reduce", "Shrink"]),
+        GameQuestion(equation: "Frail", correctAnswer: "Weak", options: ["Strong", "Weak", "Powerful", "Robust"]),
+        GameQuestion(equation: "Hasty", correctAnswer: "Quick", options: ["Slow", "Quick", "Careful", "Deliberate"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Linger", correctAnswer: "Stay", options: ["Leave", "Stay", "Depart", "Go"]),
+        GameQuestion(equation: "Mute", correctAnswer: "Silent", options: ["Loud", "Silent", "Noisy", "Vocal"]),
+        GameQuestion(equation: "Reckless", correctAnswer: "Careless", options: ["Careful", "Careless", "Cautious", "Prudent"]),
+      ],
+    ),
+
+    // Level 85 - Synonyms
+    GameLevel(
+      level: 85,
+      questions: [
+        GameQuestion(equation: "Acquire", correctAnswer: "Obtain", options: ["Lose", "Obtain", "Give", "Surrender"]),
+        GameQuestion(equation: "Blend", correctAnswer: "Mix", options: ["Separate", "Mix", "Divide", "Split"]),
+        GameQuestion(equation: "Cunning", correctAnswer: "Clever", options: ["Foolish", "Clever", "Stupid", "Dumb"]),
+        GameQuestion(equation: "Devour", correctAnswer: "Eat", options: ["Starve", "Eat", "Fast", "Abstain"]),
+        GameQuestion(equation: "Erupt", correctAnswer: "Burst", options: ["Calm", "Burst", "Settle", "Subside"]),
+        GameQuestion(equation: "Grieve", correctAnswer: "Mourn", options: ["Celebrate", "Mourn", "Rejoice", "Cheer"]),
+        GameQuestion(equation: "Host", correctAnswer: "Entertainer", options: ["Guest", "Entertainer", "Visitor", "Attendee"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Imitate", correctAnswer: "Copy", options: ["Create", "Copy", "Invent", "Originate"]),
+        GameQuestion(equation: "Pierce", correctAnswer: "Penetrate", options: ["Block", "Penetrate", "Seal", "Close"]),
+        GameQuestion(equation: "Tense", correctAnswer: "Tight", options: ["Relaxed", "Tight", "Loose", "Slack"]),
+      ],
+    ),
+
+    // Level 86 - Synonyms
+    GameLevel(
+      level: 86,
+      questions: [
+        GameQuestion(equation: "Amend", correctAnswer: "Improve", options: ["Worsen", "Improve", "Damage", "Harm"]),
+        GameQuestion(equation: "Baffle", correctAnswer: "Confuse", options: ["Clarify", "Confuse", "Explain", "Simplify"]),
+        GameQuestion(equation: "Courage", correctAnswer: "Bravery", options: ["Cowardice", "Bravery", "Fear", "Timidity"]),
+        GameQuestion(equation: "Diminish", correctAnswer: "Reduce", options: ["Increase", "Reduce", "Grow", "Expand"]),
+        GameQuestion(equation: "Eager", correctAnswer: "Keen", options: ["Reluctant", "Keen", "Unwilling", "Hesitant"]),
+        GameQuestion(equation: "Idle", correctAnswer: "Inactive", options: ["Active", "Inactive", "Busy", "Working"]),
+        GameQuestion(equation: "Legacy", correctAnswer: "Heritage", options: ["Future", "Heritage", "Tomorrow", "Present"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Motive", correctAnswer: "Reason", options: ["Effect", "Reason", "Result", "Consequence"]),
+        GameQuestion(equation: "Ponder", correctAnswer: "Think", options: ["Ignore", "Think", "Dismiss", "Forget"]),
+        GameQuestion(equation: "Trace", correctAnswer: "Follow", options: ["Lead", "Follow", "Abandon", "Ignore"]),
+      ],
+    ),
+
+    // Level 87 - Synonyms
+    GameLevel(
+      level: 87,
+      questions: [
+        GameQuestion(equation: "Agile", correctAnswer: "Nimble", options: ["Clumsy", "Nimble", "Awkward", "Heavy"]),
+        GameQuestion(equation: "Brilliant", correctAnswer: "Bright", options: ["Dull", "Bright", "Dim", "Dark"]),
+        GameQuestion(equation: "Compel", correctAnswer: "Force", options: ["Persuade", "Force", "Request", "Ask"]),
+        GameQuestion(equation: "Detach", correctAnswer: "Separate", options: ["Attach", "Separate", "Connect", "Join"]),
+        GameQuestion(equation: "Excel", correctAnswer: "Outperform", options: ["Fail", "Outperform", "Struggle", "Underperform"]),
+        GameQuestion(equation: "Fierce", correctAnswer: "Strong", options: ["Weak", "Strong", "Gentle", "Mild"]),
+        GameQuestion(equation: "Humble", correctAnswer: "Respectful", options: ["Arrogant", "Respectful", "Rude", "Proud"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Luminous", correctAnswer: "Shining", options: ["Dark", "Shining", "Dull", "Dim"]),
+        GameQuestion(equation: "Prevail", correctAnswer: "Win", options: ["Lose", "Win", "Fail", "Surrender"]),
+        GameQuestion(equation: "Rigid", correctAnswer: "Stiff", options: ["Flexible", "Stiff", "Soft", "Bendable"]),
+      ],
+    ),
+
+    // Level 88 - Synonyms
+    GameLevel(
+      level: 88,
+      questions: [
+        GameQuestion(equation: "Assure", correctAnswer: "Guarantee", options: ["Doubt", "Guarantee", "Question", "Deny"]),
+        GameQuestion(equation: "Bliss", correctAnswer: "Happiness", options: ["Misery", "Happiness", "Sadness", "Sorrow"]),
+        GameQuestion(equation: "Conquer", correctAnswer: "Defeat", options: ["Lose", "Defeat", "Surrender", "Fail"]),
+        GameQuestion(equation: "Dense", correctAnswer: "Thick", options: ["Thin", "Thick", "Sparse", "Light"]),
+        GameQuestion(equation: "Embrace", correctAnswer: "Hug", options: ["Reject", "Hug", "Push", "Avoid"]),
+        GameQuestion(equation: "Foster", correctAnswer: "Encourage", options: ["Discourage", "Encourage", "Hinder", "Prevent"]),
+        GameQuestion(equation: "Manual", correctAnswer: "Hand-made", options: ["Automatic", "Hand-made", "Machine-made", "Factory"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Neglect", correctAnswer: "Ignore", options: ["Care", "Ignore", "Attend", "Notice"]),
+        GameQuestion(equation: "Scarce", correctAnswer: "Rare", options: ["Common", "Rare", "Abundant", "Plentiful"]),
+        GameQuestion(equation: "Vivid", correctAnswer: "Clear", options: ["Vague", "Clear", "Unclear", "Blurry"]),
+      ],
+    ),
+
+    // Level 89 - Synonyms
+    GameLevel(
+      level: 89,
+      questions: [
+        GameQuestion(equation: "Astonish", correctAnswer: "Surprise", options: ["Bore", "Surprise", "Expect", "Anticipate"]),
+        GameQuestion(equation: "Brutal", correctAnswer: "Cruel", options: ["Kind", "Cruel", "Gentle", "Compassionate"]),
+        GameQuestion(equation: "Conclude", correctAnswer: "Finish", options: ["Start", "Finish", "Begin", "Open"]),
+        GameQuestion(equation: "Dreadful", correctAnswer: "Terrible", options: ["Wonderful", "Terrible", "Great", "Excellent"]),
+        GameQuestion(equation: "Expand", correctAnswer: "Grow", options: ["Shrink", "Grow", "Contract", "Reduce"]),
+        GameQuestion(equation: "Grateful", correctAnswer: "Thankful", options: ["Ungrateful", "Thankful", "Unappreciative", "Resentful"]),
+        GameQuestion(equation: "Initial", correctAnswer: "First", options: ["Last", "First", "Final", "Ending"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Precise", correctAnswer: "Exact", options: ["Approximate", "Exact", "Vague", "Unclear"]),
+        GameQuestion(equation: "Scheme", correctAnswer: "Plan", options: ["Chaos", "Plan", "Disorder", "Confusion"]),
+        GameQuestion(equation: "Witty", correctAnswer: "Clever", options: ["Dull", "Clever", "Boring", "Stupid"]),
+      ],
+    ),
+
+    // Level 90 - Synonyms
+    GameLevel(
+      level: 90,
+      questions: [
+        GameQuestion(equation: "Appease", correctAnswer: "Calm", options: ["Agitate", "Calm", "Anger", "Provoke"]),
+        GameQuestion(equation: "Boldness", correctAnswer: "Courage", options: ["Cowardice", "Courage", "Fear", "Timidity"]),
+        GameQuestion(equation: "Collide", correctAnswer: "Crash", options: ["Miss", "Crash", "Avoid", "Dodge"]),
+        GameQuestion(equation: "Diligent", correctAnswer: "Hardworking", options: ["Lazy", "Hardworking", "Idle", "Careless"]),
+        GameQuestion(equation: "Enrich", correctAnswer: "Improve", options: ["Worsen", "Improve", "Damage", "Harm"]),
+        GameQuestion(equation: "Flaw", correctAnswer: "Defect", options: ["Perfection", "Defect", "Excellence", "Virtue"]),
+        GameQuestion(equation: "Hollow", correctAnswer: "Empty", options: ["Full", "Empty", "Solid", "Filled"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Noble", correctAnswer: "Honorable", options: ["Shameful", "Honorable", "Disgraceful", "Dishonest"]),
+        GameQuestion(equation: "Remedy", correctAnswer: "Cure", options: ["Disease", "Cure", "Illness", "Sickness"]),
+        GameQuestion(equation: "Timid", correctAnswer: "Shy", options: ["Bold", "Shy", "Confident", "Outgoing"]),
+      ],
+    ),
+
+    // Level 91 - Synonyms
+    GameLevel(
+      level: 91,
+      questions: [
+        GameQuestion(equation: "Adaptable", correctAnswer: "Flexible", options: ["Rigid", "Flexible", "Stiff", "Inflexible"]),
+        GameQuestion(equation: "Burst", correctAnswer: "Explode", options: ["Contain", "Explode", "Hold", "Keep"]),
+        GameQuestion(equation: "Cautious", correctAnswer: "Careful", options: ["Reckless", "Careful", "Careless", "Hasty"]),
+        GameQuestion(equation: "Defy", correctAnswer: "Resist", options: ["Obey", "Resist", "Submit", "Comply"]),
+        GameQuestion(equation: "Emerge", correctAnswer: "Appear", options: ["Disappear", "Appear", "Vanish", "Hide"]),
+        GameQuestion(equation: "Flee", correctAnswer: "Escape", options: ["Stay", "Escape", "Remain", "Confront"]),
+        GameQuestion(equation: "Harbor", correctAnswer: "Shelter", options: ["Expose", "Shelter", "Reveal", "Uncover"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Intrude", correctAnswer: "Interfere", options: ["Respect", "Interfere", "Allow", "Permit"]),
+        GameQuestion(equation: "Rigid", correctAnswer: "Firm", options: ["Flexible", "Firm", "Soft", "Bendable"]),
+        GameQuestion(equation: "Wander", correctAnswer: "Roam", options: ["Stay", "Roam", "Settle", "Remain"]),
+      ],
+    ),
+
+    // Level 92 - Synonyms
+    GameLevel(
+      level: 92,
+      questions: [
+        GameQuestion(equation: "Accurate", correctAnswer: "Correct", options: ["Wrong", "Correct", "False", "Incorrect"]),
+        GameQuestion(equation: "Bribe", correctAnswer: "Offer", options: ["Refuse", "Offer", "Decline", "Reject"]),
+        GameQuestion(equation: "Conserve", correctAnswer: "Protect", options: ["Waste", "Protect", "Destroy", "Harm"]),
+        GameQuestion(equation: "Distort", correctAnswer: "Twist", options: ["Straighten", "Twist", "Correct", "Fix"]),
+        GameQuestion(equation: "Eternal", correctAnswer: "Endless", options: ["Temporary", "Endless", "Brief", "Short"]),
+        GameQuestion(equation: "Grasp", correctAnswer: "Grip", options: ["Release", "Grip", "Let go", "Drop"]),
+        GameQuestion(equation: "Immense", correctAnswer: "Huge", options: ["Tiny", "Huge", "Small", "Little"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Nurture", correctAnswer: "Care", options: ["Neglect", "Care", "Ignore", "Abandon"]),
+        GameQuestion(equation: "Resolve", correctAnswer: "Settle", options: ["Complicate", "Settle", "Confuse", "Worsen"]),
+        GameQuestion(equation: "Venerate", correctAnswer: "Respect", options: ["Disrespect", "Respect", "Insult", "Mock"]),
+      ],
+    ),
+
+    // Level 93 - Synonyms
+    GameLevel(
+      level: 93,
+      questions: [
+        GameQuestion(equation: "Affection", correctAnswer: "Love", options: ["Hatred", "Love", "Dislike", "Animosity"]),
+        GameQuestion(equation: "Beneath", correctAnswer: "Under", options: ["Above", "Under", "Over", "Top"]),
+        GameQuestion(equation: "Conscious", correctAnswer: "Aware", options: ["Unaware", "Aware", "Oblivious", "Ignorant"]),
+        GameQuestion(equation: "Disrupt", correctAnswer: "Disturb", options: ["Order", "Disturb", "Organize", "Arrange"]),
+        GameQuestion(equation: "Elevate", correctAnswer: "Lift", options: ["Lower", "Lift", "Drop", "Descend"]),
+        GameQuestion(equation: "Forbid", correctAnswer: "Prohibit", options: ["Allow", "Prohibit", "Permit", "Enable"]),
+        GameQuestion(equation: "Haste", correctAnswer: "Speed", options: ["Slowness", "Speed", "Delay", "Hesitation"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Majestic", correctAnswer: "Grand", options: ["Humble", "Grand", "Plain", "Simple"]),
+        GameQuestion(equation: "Plunge", correctAnswer: "Drop", options: ["Rise", "Drop", "Ascend", "Climb"]),
+        GameQuestion(equation: "Tolerate", correctAnswer: "Accept", options: ["Reject", "Accept", "Refuse", "Deny"]),
+      ],
+    ),
+
+    // Level 94 - Synonyms
+    GameLevel(
+      level: 94,
+      questions: [
+        GameQuestion(equation: "Ally", correctAnswer: "Partner", options: ["Enemy", "Partner", "Foe", "Opponent"]),
+        GameQuestion(equation: "Boost", correctAnswer: "Increase", options: ["Decrease", "Increase", "Reduce", "Lower"]),
+        GameQuestion(equation: "Convince", correctAnswer: "Persuade", options: ["Discourage", "Persuade", "Deter", "Dissuade"]),
+        GameQuestion(equation: "Erode", correctAnswer: "Wear away", options: ["Build", "Wear away", "Construct", "Create"]),
+        GameQuestion(equation: "Faint", correctAnswer: "Weak", options: ["Strong", "Weak", "Powerful", "Intense"]),
+        GameQuestion(equation: "Hasty", correctAnswer: "Quick", options: ["Slow", "Quick", "Careful", "Deliberate"]),
+        GameQuestion(equation: "Justify", correctAnswer: "Explain", options: ["Confuse", "Explain", "Obscure", "Hide"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Pledge", correctAnswer: "Promise", options: ["Break", "Promise", "Betray", "Abandon"]),
+        GameQuestion(equation: "Soothe", correctAnswer: "Comfort", options: ["Agitate", "Comfort", "Disturb", "Upset"]),
+        GameQuestion(equation: "Wicked", correctAnswer: "Evil", options: ["Good", "Evil", "Virtuous", "Kind"]),
+      ],
+    ),
+
+    // Level 95 - Synonyms
+    GameLevel(
+      level: 95,
+      questions: [
+        GameQuestion(equation: "Ascend", correctAnswer: "Rise", options: ["Fall", "Rise", "Drop", "Descend"]),
+        GameQuestion(equation: "Barrier", correctAnswer: "Block", options: ["Opening", "Block", "Path", "Way"]),
+        GameQuestion(equation: "Compassion", correctAnswer: "Kindness", options: ["Cruelty", "Kindness", "Meanness", "Harshness"]),
+        GameQuestion(equation: "Dominate", correctAnswer: "Control", options: ["Submit", "Control", "Surrender", "Yield"]),
+        GameQuestion(equation: "Evident", correctAnswer: "Clear", options: ["Unclear", "Clear", "Vague", "Obscure"]),
+        GameQuestion(equation: "Fumble", correctAnswer: "Mishandle", options: ["Master", "Mishandle", "Control", "Manage"]),
+        GameQuestion(equation: "Harsh", correctAnswer: "Severe", options: ["Gentle", "Severe", "Mild", "Soft"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Linger", correctAnswer: "Stay", options: ["Leave", "Stay", "Depart", "Go"]),
+        GameQuestion(equation: "Persevere", correctAnswer: "Continue", options: ["Quit", "Continue", "Stop", "Surrender"]),
+        GameQuestion(equation: "Worthy", correctAnswer: "Deserving", options: ["Unworthy", "Deserving", "Undeserving", "Worthless"]),
+      ],
+    ),
+
+    // Level 96 - Synonyms
+    GameLevel(
+      level: 96,
+      questions: [
+        GameQuestion(equation: "Abundant", correctAnswer: "Plentiful", options: ["Scarce", "Plentiful", "Rare", "Limited"]),
+        GameQuestion(equation: "Bewilder", correctAnswer: "Confuse", options: ["Clarify", "Confuse", "Explain", "Simplify"]),
+        GameQuestion(equation: "Criticize", correctAnswer: "Blame", options: ["Praise", "Blame", "Commend", "Compliment"]),
+        GameQuestion(equation: "Defeat", correctAnswer: "Beat", options: ["Win", "Beat", "Victory", "Triumph"]),
+        GameQuestion(equation: "Elope", correctAnswer: "Run away", options: ["Stay", "Run away", "Remain", "Settle"]),
+        GameQuestion(equation: "Fragile", correctAnswer: "Breakable", options: ["Strong", "Breakable", "Tough", "Durable"]),
+        GameQuestion(equation: "Immerse", correctAnswer: "Submerge", options: ["Surface", "Submerge", "Emerge", "Rise"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Perilous", correctAnswer: "Dangerous", options: ["Safe", "Dangerous", "Secure", "Protected"]),
+        GameQuestion(equation: "Sincere", correctAnswer: "Genuine", options: ["Fake", "Genuine", "False", "Dishonest"]),
+        GameQuestion(equation: "Triumph", correctAnswer: "Victory", options: ["Defeat", "Victory", "Loss", "Failure"]),
+      ],
+    ),
+
+    // Level 97 - Synonyms
+    GameLevel(
+      level: 97,
+      questions: [
+        GameQuestion(equation: "Acknowledge", correctAnswer: "Accept", options: ["Deny", "Accept", "Reject", "Refuse"]),
+        GameQuestion(equation: "Brisk", correctAnswer: "Quick", options: ["Slow", "Quick", "Sluggish", "Lazy"]),
+        GameQuestion(equation: "Convey", correctAnswer: "Communicate", options: ["Conceal", "Communicate", "Hide", "Suppress"]),
+        GameQuestion(equation: "Disguise", correctAnswer: "Hide", options: ["Reveal", "Hide", "Show", "Expose"]),
+        GameQuestion(equation: "Endorse", correctAnswer: "Support", options: ["Oppose", "Support", "Reject", "Deny"]),
+        GameQuestion(equation: "Furious", correctAnswer: "Angry", options: ["Calm", "Angry", "Peaceful", "Happy"]),
+        GameQuestion(equation: "Impartial", correctAnswer: "Fair", options: ["Biased", "Fair", "Prejudiced", "Unfair"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Mend", correctAnswer: "Fix", options: ["Break", "Fix", "Damage", "Destroy"]),
+        GameQuestion(equation: "Probe", correctAnswer: "Investigate", options: ["Ignore", "Investigate", "Overlook", "Neglect"]),
+        GameQuestion(equation: "Tender", correctAnswer: "Soft", options: ["Rough", "Soft", "Hard", "Harsh"]),
+      ],
+    ),
+
+    // Level 98 - Synonyms
+    GameLevel(
+      level: 98,
+      questions: [
+        GameQuestion(equation: "Arrogant", correctAnswer: "Proud", options: ["Humble", "Proud", "Modest", "Meek"]),
+        GameQuestion(equation: "Burden", correctAnswer: "Load", options: ["Relief", "Load", "Help", "Ease"]),
+        GameQuestion(equation: "Commence", correctAnswer: "Start", options: ["End", "Start", "Finish", "Stop"]),
+        GameQuestion(equation: "Dwell", correctAnswer: "Live", options: ["Leave", "Live", "Depart", "Go"]),
+        GameQuestion(equation: "Evoke", correctAnswer: "Recall", options: ["Forget", "Recall", "Ignore", "Dismiss"]),
+        GameQuestion(equation: "Frigid", correctAnswer: "Cold", options: ["Hot", "Cold", "Warm", "Boiling"]),
+        GameQuestion(equation: "Hinder", correctAnswer: "Block", options: ["Help", "Block", "Aid", "Assist"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Obsolete", correctAnswer: "Outdated", options: ["Modern", "Outdated", "Current", "New"]),
+        GameQuestion(equation: "Plead", correctAnswer: "Beg", options: ["Demand", "Beg", "Order", "Command"]),
+        GameQuestion(equation: "Vague", correctAnswer: "Unclear", options: ["Clear", "Unclear", "Obvious", "Precise"]),
+      ],
+    ),
+
+    // Level 99 - Synonyms
+    GameLevel(
+      level: 99,
+      questions: [
+        GameQuestion(equation: "Attain", correctAnswer: "Achieve", options: ["Fail", "Achieve", "Lose", "Miss"]),
+        GameQuestion(equation: "Brittle", correctAnswer: "Fragile", options: ["Strong", "Fragile", "Tough", "Durable"]),
+        GameQuestion(equation: "Complicate", correctAnswer: "Confuse", options: ["Simplify", "Confuse", "Clarify", "Explain"]),
+        GameQuestion(equation: "Domesticate", correctAnswer: "Tame", options: ["Wild", "Tame", "Savage", "Feral"]),
+        GameQuestion(equation: "Entice", correctAnswer: "Attract", options: ["Repel", "Attract", "Disgust", "Deter"]),
+        GameQuestion(equation: "Grim", correctAnswer: "Gloomy", options: ["Cheerful", "Gloomy", "Happy", "Bright"]),
+        GameQuestion(equation: "Major", correctAnswer: "Important", options: ["Minor", "Important", "Trivial", "Insignificant"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Prevail", correctAnswer: "Succeed", options: ["Fail", "Succeed", "Lose", "Surrender"]),
+        GameQuestion(equation: "Scrutinize", correctAnswer: "Examine", options: ["Ignore", "Examine", "Overlook", "Neglect"]),
+        GameQuestion(equation: "Thrifty", correctAnswer: "Economical", options: ["Wasteful", "Economical", "Extravagant", "Lavish"]),
+      ],
+    ),
+
+    // Level 100 - Synonyms
+    GameLevel(
+      level: 100,
+      questions: [
+        GameQuestion(equation: "Amuse", correctAnswer: "Entertain", options: ["Bore", "Entertain", "Tire", "Dull"]),
+        GameQuestion(equation: "Blend", correctAnswer: "Combine", options: ["Separate", "Combine", "Divide", "Split"]),
+        GameQuestion(equation: "Confiscate", correctAnswer: "Seize", options: ["Return", "Seize", "Give", "Restore"]),
+        GameQuestion(equation: "Detest", correctAnswer: "Hate", options: ["Love", "Hate", "Adore", "Like"]),
+        GameQuestion(equation: "Endow", correctAnswer: "Provide", options: ["Withhold", "Provide", "Deny", "Refuse"]),
+        GameQuestion(equation: "Fury", correctAnswer: "Rage", options: ["Calm", "Rage", "Peace", "Serenity"]),
+        GameQuestion(equation: "Honest", correctAnswer: "Truthful", options: ["Dishonest", "Truthful", "Lying", "Deceptive"]),
+      ],
+      questionPool: [
+        GameQuestion(equation: "Nomadic", correctAnswer: "Wandering", options: ["Settled", "Wandering", "Fixed", "Stationary"]),
+        GameQuestion(equation: "Reckon", correctAnswer: "Think", options: ["Ignore", "Think", "Dismiss", "Overlook"]),
+        GameQuestion(equation: "Turbulent", correctAnswer: "Unstable", options: ["Stable", "Unstable", "Calm", "Peaceful"]),
+      ],
+    ),
   ];
 
   static GameLevel? getLevelData(int level) {
