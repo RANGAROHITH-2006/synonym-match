@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../solveequationgame/lib"
+		},
+		{
+			"path": "../solveequationgame/assets"
+		}
+	],
+	"settings": {}
+}
