@@ -109,7 +109,13 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                           error,
                                           stackTrace,
                                         ) {
-                                          return Container();
+                                          return SizedBox(
+                                            child: Icon(
+                                              Icons.workspace_premium,
+                                              color: Colors.yellow,
+                                              size: 20,
+                                            ),
+                                          );
                                         },
                                       ),
                                       const SizedBox(width: 4),
@@ -349,7 +355,7 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -461,11 +467,12 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                               ),
                             ),
                           ),
+                          const SizedBox(height: 8),
 
                           // Start button (fixed at bottom)
                           SizedBox(
                             width: double.infinity,
-                            height: 56,
+                            height: 50,
                             child: ElevatedButton(
                               onPressed:
                                   selectedLevel != null

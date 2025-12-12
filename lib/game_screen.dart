@@ -380,12 +380,12 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
                       const Text(
                         'Wrong !',
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 28,
                           fontWeight: FontWeight.bold,
                           color: Colors.red,
                         ),
                       ),
-                      const SizedBox(width: 10),
+                     
                       // Container(
                       //   padding: const EdgeInsets.symmetric(
                       //     horizontal: 8,
@@ -406,11 +406,11 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
                       // ),
                     ],
                   ),
-                  const SizedBox(height: 12),
+                  const SizedBox(height: 8),
                   Text(
                     currentQuestion.equation,
                     style: const TextStyle(
-                      fontSize: 30,
+                      fontSize: 28,
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),
