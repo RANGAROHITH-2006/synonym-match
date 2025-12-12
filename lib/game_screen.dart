@@ -960,8 +960,8 @@ class _LevelCompleteDialogState extends State<_LevelCompleteDialog> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        countdownTimer?.cancel();
-        return true;
+        // countdownTimer?.cancel();
+        return false;
       },
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -1063,10 +1063,18 @@ class _LevelCompleteDialogState extends State<_LevelCompleteDialog> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Icon(
-                              Icons.workspace_premium,
-                              color: Colors.amber,
-                              size: 36,
+                            Image.asset(
+                              'assets/images/score.png',
+                              width: 40,
+                              height: 40,
+                              fit: BoxFit.contain,
+                              errorBuilder: (context, error, stackTrace) {
+                                return const Icon(
+                                  Icons.workspace_premium,
+                                  color: Colors.amber,
+                                  size: 32,
+                                );
+                              },
                             ),
                             const SizedBox(width: 8),
                             Text(

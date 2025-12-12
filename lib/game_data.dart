@@ -35,10 +35,10 @@ class GameData {
   level: 1,
   questions: [
     GameQuestion(equation: "Happy", correctAnswer: "Joyful", options: ["Sad", "Joyful", "Angry", "Weak"]),
-    GameQuestion(equation: "Big", correctAnswer: "Large", options: ["Small", "Large", "Thin", "Tiny"]),
+    GameQuestion(equation: "Big", correctAnswer: "Large", options: ["Large", "Small", "Thin", "Tiny"]),
     GameQuestion(equation: "Fast", correctAnswer: "Quick", options: ["Slow", "Late", "Quick", "Calm"]),
     GameQuestion(equation: "End", correctAnswer: "Finish", options: ["Start", "Finish", "Lose", "Change"]),
-    GameQuestion(equation: "Smart", correctAnswer: "Clever", options: ["Dumb", "Lazy", "Clever", "Cold"]),
+    GameQuestion(equation: "Smart", correctAnswer: "Clever", options: ["Dumb", "Lazy", "Cold", "Clever"]),
     GameQuestion(equation: "Start", correctAnswer: "Begin", options: ["Begin", "Stop", "Close", "Delay"]),
     GameQuestion(equation: "Cold", correctAnswer: "Chilly", options: ["Warm", "Hot", "Chilly", "Dry"]),
   ],
@@ -56,12 +56,12 @@ class GameData {
   level: 2,
   questions: [
     GameQuestion(equation: "Help", correctAnswer: "Assist", options: ["Hurt", "Assist", "Ignore", "Delay"]),
-    GameQuestion(equation: "Wait", correctAnswer: "Pause", options: ["Run", "Pause", "Jump", "Move"]),
+    GameQuestion(equation: "Wait", correctAnswer: "Pause", options: ["Pause", "Run", "Jump", "Move"]),
     GameQuestion(equation: "Lucky", correctAnswer: "Fortunate", options: ["Unlucky", "Sad", "Fortunate", "Late"]),
-    GameQuestion(equation: "Clean", correctAnswer: "Neat", options: ["Dirty", "Neat", "Old", "Weak"]),
+    GameQuestion(equation: "Clean", correctAnswer: "Neat", options: ["Dirty", "Old", "Weak", "Neat"]),
     GameQuestion(equation: "Brave", correctAnswer: "Fearless", options: ["Coward", "Quiet", "Fearless", "Lazy"]),
     GameQuestion(equation: "Calm", correctAnswer: "Peaceful", options: ["Angry", "Peaceful", "Fast", "Sharp"]),
-    GameQuestion(equation: "Safe", correctAnswer: "Secure", options: ["Risky", "Open", "Secure", "Weak"]),
+    GameQuestion(equation: "Safe", correctAnswer: "Secure", options: [ "Secure", "Risky", "Open", "Weak"]),
   ],
   questionPool: [
     GameQuestion(equation: "Funny", correctAnswer: "Amusing", options: ["Boring", "Amusing", "Sad", "Weak"]),
