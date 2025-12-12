@@ -7,6 +7,9 @@ class LevelProgressService {
   static const String _keyHighestLevel = 'highest_level_completed';
   static const String _keyLevelCompletionPrefix = 'level_completed_';
   static const String _keyLevelScorePrefix = 'level_score_';
+  static const String _keyTotalScore = 'total_score';
+  static const String _keyLevelFirstCompletionPrefix =
+      'level_first_completion_';
 
   static LevelProgressService? _instance;
   SharedPreferences? _prefs;
@@ -41,9 +44,18 @@ class LevelProgressService {
 
   /// Mark a specific level as completed
   Future<void> markLevelCompleted(int level, {int score = 0}) async {
+    // Check if this is the first time completing this level
+    final isFirstCompletion = !isLevelCompleted(level);
+
     await _prefs?.setBool('$_keyLevelCompletionPrefix$level', true);
     await _prefs?.setInt('$_keyLevelScorePrefix$level', score);
     await updateHighestLevelCompleted(level);
+
+    // If first completion, add score to total and mark as first completion
+    if (isFirstCompletion) {
+      await _addToTotalScore(score);
+      await _prefs?.setBool('$_keyLevelFirstCompletionPrefix$level', true);
+    }
   }
 
   /// Check if a specific level is completed
@@ -55,6 +67,17 @@ class LevelProgressService {
   /// Returns 0 if the level hasn't been completed
   int getLevelScore(int level) {
     return _prefs?.getInt('$_keyLevelScorePrefix$level') ?? 0;
+  }
+
+  /// Get the total score (sum of all first-time level completions)
+  int getTotalScore() {
+    return _prefs?.getInt(_keyTotalScore) ?? 0;
+  }
+
+  /// Add score to the total score (private method)
+  Future<void> _addToTotalScore(int score) async {
+    final currentTotal = getTotalScore();
+    await _prefs?.setInt(_keyTotalScore, currentTotal + score);
   }
 
   /// Check if a level is unlocked
@@ -106,7 +129,13 @@ class LevelProgressService {
       final completed = isLevelCompleted(i);
       final unlocked = isLevelUnlocked(i);
       final score = getLevelScore(i);
-      print('Level $i: ${completed ? "Completed" : unlocked ? "Unlocked" : "Locked"} (Score: $score)');
+      print(
+        'Level $i: ${completed
+            ? "Completed"
+            : unlocked
+            ? "Unlocked"
+            : "Locked"} (Score: $score)',
+      );
     }
     print('===========================');
   }

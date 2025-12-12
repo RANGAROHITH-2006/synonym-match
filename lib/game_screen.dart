@@ -31,6 +31,9 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
   bool isWrongAnswerDialogOpen = false; // Track if wrong answer dialog is open
   List<int> usedQuestionIndices = []; // Track used questions from the pool
   final Random _random = Random(); // Random generator for selecting questions
+  bool showScoreDeduction =
+      false; // Track if score deduction animation is visible
+  final GlobalKey _scoreKey = GlobalKey(); // Key to find score position
 
   // Get current question based on round
   GameQuestion get currentQuestion => currentQuestions[currentRound - 1];
@@ -290,11 +293,28 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
       }
     } else {
       // Wrong answer: -5 points
+      final int previousScore = score;
       setState(() {
         score -= 5;
         if (score < 0) score = 0; // Don't go below 0
       });
       HapticFeedback.vibrate();
+
+      // Show animated deduction only if previous score was > 0
+      if (previousScore > 0) {
+        setState(() {
+          showScoreDeduction = true;
+        });
+        // Hide animation after 1 second
+        Future.delayed(const Duration(milliseconds: 1000), () {
+          if (mounted) {
+            setState(() {
+              showScoreDeduction = false;
+            });
+          }
+        });
+      }
+
       // Show wrong answer popup with both answers
       _showWrongAnswerPopup(answer, currentQuestion.correctAnswer);
     }
@@ -382,13 +402,15 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
                   ],
                 ),
                 const SizedBox(height: 12),
-                Text(currentQuestion.equation,
-                    style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    )),
-                    SizedBox(height: 16,),
+                Text(
+                  currentQuestion.equation,
+                  style: const TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 16),
                 // Answer comparison
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -672,6 +694,7 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
                       ),
                       // Score
                       Text(
+                        key: _scoreKey,
                         'Score $score',
                         style: const TextStyle(
                           color: Colors.white70,
@@ -694,7 +717,7 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
 
                   child: Column(
                     children: [
-                      SizedBox(height: 20,),
+                      SizedBox(height: 20),
                       Text(
                         currentQuestion.equation,
                         style: const TextStyle(
@@ -762,6 +785,49 @@ class _SynonymGameScreenState extends State<SynonymGameScreen> {
               ],
             ),
           ),
+          // Animated Score Deduction Overlay
+          if (showScoreDeduction)
+            Positioned(
+              top: 60,
+              right: 24,
+              child: TweenAnimationBuilder<double>(
+                duration: const Duration(milliseconds: 1000),
+                tween: Tween(begin: 0.0, end: 50.0),
+                builder: (context, value, child) {
+                  return Transform.translate(
+                    offset: Offset(0, -value),
+                    child: Opacity(
+                      opacity: 1.0 - (value / 50.0),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.red.withOpacity(0.9),
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.red.withOpacity(0.5),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: const Text(
+                          '-5',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
         ],
       ),
     );

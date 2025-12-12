@@ -86,6 +86,45 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                             ),
                             Row(
                               children: [
+                                // Total Score Display
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 8,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.4),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Image.asset(
+                                        'assets/images/score.png',
+                                        width: 20,
+                                        height: 20,
+                                        fit: BoxFit.contain,
+                                        errorBuilder: (
+                                          context,
+                                          error,
+                                          stackTrace,
+                                        ) {
+                                          return Container();
+                                        },
+                                      ),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        '${_progressService.getTotalScore()}',
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
                                 GestureDetector(
                                   onTap: () {
                                     showHelpDialog(context);
@@ -119,8 +158,8 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                     });
                                     if (showing) {
                                       Share.share(
-                                        'Check out Solve Synonym Game! Test your math skills and solve Synonyms quickly. Download now!',
-                                        subject: 'Play Solve Synonym Game',
+                                        'Check out Synonym match Game! Test your english skills and find Synonyms quickly. Download now!',
+                                        subject: 'Play Synonym match Game!',
                                       );
                                     }
                                   },
@@ -172,7 +211,9 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                     width: 200,
                                     height: 40,
                                     decoration: BoxDecoration(
-                                      color: const Color(0xFF8E8E93).withOpacity(0.5),
+                                      color: const Color(
+                                        0xFF8E8E93,
+                                      ).withOpacity(0.5),
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: const Center(
@@ -216,7 +257,9 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                         width: 120,
                                         height: 40,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xFF8E8E93).withOpacity(0.5),
+                                          color: const Color(
+                                            0xFF8E8E93,
+                                          ).withOpacity(0.5),
                                           borderRadius: BorderRadius.circular(
                                             8,
                                           ),
@@ -242,7 +285,9 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                         width: 120,
                                         height: 40,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xFF8E8E93).withOpacity(0.5),
+                                          color: const Color(
+                                            0xFF8E8E93,
+                                          ).withOpacity(0.5),
                                           borderRadius: BorderRadius.circular(
                                             8,
                                           ),
@@ -263,7 +308,9 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                                         width: 120,
                                         height: 40,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xFF8E8E93).withOpacity(0.5),
+                                          color: const Color(
+                                            0xFF8E8E93,
+                                          ).withOpacity(0.5),
                                           borderRadius: BorderRadius.circular(
                                             8,
                                           ),
@@ -301,153 +348,158 @@ class _SynonymGameHomeScreenState extends State<SynonymGameHomeScreen> {
                         topRight: Radius.circular(32),
                       ),
                     ),
-                    child: SingleChildScrollView(
-                      child: Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            // Header section
-                            const Text(
-                              'Games',
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Color(0xFF007AFF),
-                                fontWeight: FontWeight.w500,
-                              ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Header section
+                          const Text(
+                            'Games',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color(0xFF007AFF),
+                              fontWeight: FontWeight.w500,
                             ),
-                            const SizedBox(height: 4),
-                            const Text(
-                              'Synonym Match',
-                              style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                              ),
+                          ),
+                          const SizedBox(height: 4),
+                          const Text(
+                            'Synonym Match',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
                             ),
-                            const SizedBox(height: 8),
+                          ),
+                          const SizedBox(height: 8),
 
-                            // Levels section
-                            const Text(
-                              'Levels',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black,
-                              ),
+                          // Levels section
+                          const Text(
+                            'Levels',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black,
                             ),
-                            const SizedBox(height: 8),
+                          ),
+                          const SizedBox(height: 8),
 
-                            // Level selector
-                            SizedBox(
-                              height: 80,
-                              child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
-                                itemCount:
-                                    GameData.getTotalLevels(), // Use dynamic level count
-                                itemBuilder: (context, index) {
-                                  final levelNumber = index + 1;
-                                  final isCompleted = _progressService
-                                      .isLevelCompleted(levelNumber);
-                                  final isUnlocked = _progressService
-                                      .isLevelUnlocked(levelNumber);
+                          // Level selector
+                          SizedBox(
+                            height: 80,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount:
+                                  GameData.getTotalLevels(), // Use dynamic level count
+                              itemBuilder: (context, index) {
+                                final levelNumber = index + 1;
+                                final isCompleted = _progressService
+                                    .isLevelCompleted(levelNumber);
+                                final isUnlocked = _progressService
+                                    .isLevelUnlocked(levelNumber);
 
-                                  return Padding(
-                                    padding: const EdgeInsets.only(right: 10.0),
-                                    child: LevelItem(
-                                      levelNumber: levelNumber,
-                                      isCompleted: isCompleted,
-                                      isUnlocked: isUnlocked,
-                                      isSelected: selectedLevel == levelNumber,
-                                      onTap: () {
-                                        // Select level instead of navigating
-                                        setState(() {
-                                          selectedLevel = levelNumber;
-                                        });
-                                      },
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 10.0),
+                                  child: LevelItem(
+                                    levelNumber: levelNumber,
+                                    isCompleted: isCompleted,
+                                    isUnlocked: isUnlocked,
+                                    isSelected: selectedLevel == levelNumber,
+                                    onTap: () {
+                                      // Select level instead of navigating
+                                      setState(() {
+                                        selectedLevel = levelNumber;
+                                      });
+                                    },
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+
+                          const SizedBox(height: 8),
+
+                          // Benefits section (scrollable)
+                          Expanded(
+                            child: SingleChildScrollView(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Text(
+                                    'Benefits',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.black,
                                     ),
-                                  );
-                                },
-                              ),
-                            ),
-
-                            const SizedBox(height: 8),
-
-                            // Benefits section
-                            const Text(
-                              'Benefits',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black,
-                              ),
-                            ),
-                            const SizedBox(height: 16),
-
-                            const BenefitItem(
-                              icon: Icons.psychology_outlined,
-                              title: 'Improved Vocabulary',
-                              description:
-                                  'Expand your word knowledge and learn new synonyms that enhance your language comprehension.',
-                            ),
-                            const SizedBox(height: 16),
-                            const BenefitItem(
-                              icon: Icons.flash_on_outlined,
-                              title: 'Cognitive Flexibility',
-                              description:
-                                  'Boost your brain’s ability to switch between different concepts quickly and efficiently, improving mental agility.',
-                            ),
-
-                            // const SizedBox(height: 16),
-                            // const BenefitItem(
-                            //   icon: Icons.timer_outlined,
-                            //   title: 'Quick Mental Calculations',
-                            //   description:
-                            //       'Boost the speed at which you perform mental arithmetic and solve Synonyms.',
-                            // ),
-                            const SizedBox(height: 24),
-
-                            // Start button (requires level selection)
-                            SizedBox(
-                              width: double.infinity,
-                              height: 56,
-                              child: ElevatedButton(
-                                onPressed:
-                                    selectedLevel != null
-                                        ? () {
-                                          // Start game with selected level
-                                          _startSynonymGame(
-                                            context,
-                                            selectedLevel!,
-                                          );
-                                        }
-                                        : null, // Disable if no level selected
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF007AFF),
-                                  foregroundColor: Colors.white,
-                                  disabledBackgroundColor: Colors.grey,
-                                  disabledForegroundColor: Colors.white60,
-                                  elevation: 0,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16),
                                   ),
-                                ),
-                                child: Text(
+                                  const SizedBox(height: 16),
+
+                                  const BenefitItem(
+                                    icon: Icons.psychology_outlined,
+                                    title: 'Improved Vocabulary',
+                                    description:
+                                        'Expand your word knowledge and learn new synonyms that enhance your language comprehension.',
+                                  ),
+                                  const SizedBox(height: 16),
+                                  const BenefitItem(
+                                    icon: Icons.flash_on_outlined,
+                                    title: 'Cognitive Flexibility',
+                                    description:
+                                        'Boost your brain’s ability to switch between different concepts quickly and efficiently, improving mental agility.',
+                                  ),
+
+                                  const SizedBox(height: 16),
+                                  const BenefitItem(
+                                    icon: Icons.timer_outlined,
+                                    title: 'Quick Thinking Mindset',
+                                    description:
+                                        'Boost the speed at which you perform while thinking the Synonyms.',
+                                  ),
+                                  const SizedBox(height: 16),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                          // Start button (fixed at bottom)
+                          SizedBox(
+                            width: double.infinity,
+                            height: 56,
+                            child: ElevatedButton(
+                              onPressed:
                                   selectedLevel != null
-                                      ? 'Start Level $selectedLevel'
-                                      : 'Select a Level to Start',
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                                      ? () {
+                                        // Start game with selected level
+                                        _startSynonymGame(
+                                          context,
+                                          selectedLevel!,
+                                        );
+                                      }
+                                      : null, // Disable if no level selected
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xFF007AFF),
+                                foregroundColor: Colors.white,
+                                disabledBackgroundColor: Colors.grey,
+                                disabledForegroundColor: Colors.white60,
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                              ),
+                              child: Text(
+                                selectedLevel != null
+                                    ? 'Start Level $selectedLevel'
+                                    : 'Select a Level to Start',
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ),
-                            const SizedBox(
-                              height: 32,
-                            ), // Add bottom padding for scroll
-                          ],
-                        ),
+                          ),
+                          const SizedBox(height: 8),
+                        ],
                       ),
                     ),
                   ),
@@ -498,7 +550,10 @@ class LevelItem extends StatelessWidget {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          color: isSelected ? Color(0xFF34C759) : Color(0xFF34C759).withOpacity(0.4),
+          color:
+              isSelected
+                  ? Color(0xFF34C759)
+                  : Color(0xFF34C759).withOpacity(0.4),
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.all(Radius.circular(12)),
           border: Border.all(
@@ -514,7 +569,10 @@ class LevelItem extends StatelessWidget {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          color: isSelected ?  Color(0xFF007AFF) : Color(0xFF007AFF).withOpacity(0.4),
+          color:
+              isSelected
+                  ? Color(0xFF007AFF)
+                  : Color(0xFF007AFF).withOpacity(0.4),
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.all(Radius.circular(12)),
           border: Border.all(
